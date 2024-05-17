@@ -7,6 +7,11 @@ console.log("Running🏃‍♂️");
 
 const sites = [
     {
+        url: "https://nikjos.in/",
+        key: "nikjos.in",
+        filter: ["script", "style", "htmlComment"],
+    },
+    {
         url: "https://tiny.nikjos.in/force",
         key: "test",
     },
@@ -17,7 +22,7 @@ const sites = [
 //     url: "https://tiny.nikjos.in/force",
 // }));
 
-const schedule = "0 */5 * * * *"; // every 5 minute
+const schedule = "0 */5 * * * *"; // every 5 minutes
 // const schedule = "*/5 * * * * *"; // every 5 seconds
 
 cron.schedule(schedule, () => {
